@@ -10,7 +10,7 @@ public enum UnitState
     Attack,
     Die
 }
-public class Units : MonoBehaviour
+public class Unit : MonoBehaviour
 {
     [SerializeField] private int id;
     public int ID { get { return id; } set { id = value; } }

@@ -6,15 +6,15 @@ public class UnitAnimation : MonoBehaviour
 {
     private Animator anim;
 
-    private Units unit;
+    private Unit unit;
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
-        unit = GetComponent<Units>();
+        unit = GetComponent<Unit>();
     }
 
-    private void ChooseAnimation(Units u)
+    private void ChooseAnimation(Unit u)
     {
         anim.SetBool("IsIdle", false);
         anim.SetBool("IsMove", false);
