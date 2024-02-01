@@ -6274,43 +6274,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 440198, guid: 71ab41100cfbe0a4294dff63f7c12dd3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.6
+      value: -2.9435606
       objectReference: {fileID: 0}
     - target: {fileID: 440198, guid: 71ab41100cfbe0a4294dff63f7c12dd3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4
+      value: 1.0294213
       objectReference: {fileID: 0}
     - target: {fileID: 440198, guid: 71ab41100cfbe0a4294dff63f7c12dd3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.8
+      value: 5.4379277
       objectReference: {fileID: 0}
     - target: {fileID: 440198, guid: 71ab41100cfbe0a4294dff63f7c12dd3, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.48047802
+      value: -0.47966135
       objectReference: {fileID: 0}
     - target: {fileID: 440198, guid: 71ab41100cfbe0a4294dff63f7c12dd3, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.4632464
+      value: 0.45652878
       objectReference: {fileID: 0}
     - target: {fileID: 440198, guid: 71ab41100cfbe0a4294dff63f7c12dd3, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.36071217
+      value: -0.36295286
       objectReference: {fileID: 0}
     - target: {fileID: 440198, guid: 71ab41100cfbe0a4294dff63f7c12dd3, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.6514832
+      value: 0.65556973
       objectReference: {fileID: 0}
     - target: {fileID: 440198, guid: 71ab41100cfbe0a4294dff63f7c12dd3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 178.577
+      value: 177.827
       objectReference: {fileID: 0}
     - target: {fileID: 440198, guid: 71ab41100cfbe0a4294dff63f7c12dd3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -108.100006
+      value: -108.65799
       objectReference: {fileID: 0}
     - target: {fileID: 440198, guid: 71ab41100cfbe0a4294dff63f7c12dd3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 73.851
+      value: 73.944
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
