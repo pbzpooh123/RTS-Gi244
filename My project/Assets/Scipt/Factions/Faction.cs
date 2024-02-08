@@ -14,6 +14,26 @@ public enum Nation
 }
 public class Faction : MonoBehaviour
 {
+    [SerializeField] private List<Unit> aliveUnits = new List<Unit>();
+    public List<Unit> AliveUnits { get { return aliveUnits; } }
+    
+    public bool CheckUnitCost(Unit unit)
+    {
+        if (food < unit.UnitCost.food)
+            return false;
+
+        if (wood < unit.UnitCost.wood)
+            return false;
+
+        if (gold < unit.UnitCost.gold)
+            return false;
+
+        if (stone < unit.UnitCost.stone)
+            return false;
+
+        return true;
+    }
+
     [SerializeField] private Nation nation;
     public Nation Nation
     {
@@ -56,4 +76,18 @@ public class Faction : MonoBehaviour
     {
         
     }
+    
+    public void DeductUnitCost(Unit unit)
+    {
+        food -= unit.UnitCost.food;
+        wood -= unit.UnitCost.wood;
+        gold -= unit.UnitCost.gold;
+        stone -= unit.UnitCost.stone;
+    }
+    
+    public bool IsMyUnit(Unit u)
+    {
+        return aliveUnits.Contains(u);
+    }
+
 }
