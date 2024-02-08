@@ -11,6 +11,13 @@ public class MainUI : MonoBehaviour
     {
         get { return selectionMarker; }
     }
+
+    [SerializeField] private TextMeshProUGUI unitCountText;
+    [SerializeField] private TextMeshProUGUI foodText;
+    [SerializeField] private TextMeshProUGUI woodText;
+    [SerializeField] private TextMeshProUGUI goldText;
+    [SerializeField] private TextMeshProUGUI stoneText;
+
     public static MainUI instance;
 
     private void Awake()
@@ -29,4 +36,13 @@ public class MainUI : MonoBehaviour
     {
         
     }
+    public void UpdateAllResource(Faction faction)
+    {
+        unitCountText.text = faction.AliveUnits.Count.ToString();
+        foodText.text = faction.Food.ToString();
+        woodText.text = faction.Wood.ToString();
+        goldText.text = faction.Gold.ToString();
+        stoneText.text = faction.Stone.ToString();
+    }
+
 }
