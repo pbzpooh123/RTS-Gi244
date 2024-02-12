@@ -107,6 +107,9 @@ public class Building : Structure
                 }
             }
         }
+        
+        if (Input.GetKeyDown(KeyCode.H))
+            ToCreateUnit(1);
     }
 
     
