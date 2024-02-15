@@ -38,6 +38,10 @@ public class UnitSelect : MonoBehaviour
         curUnit.ToggleSelectionVisual(true);
 
         Debug.Log("Selected Unit");
+        if (GameManager.instance.MyFaction.IsMyUnit(curUnit))
+        {
+            ShowUnit(curUnit);
+        }
     }
     
     private void TrySelect(Vector2 screenPos)
@@ -56,18 +60,26 @@ public class UnitSelect : MonoBehaviour
             }
         }
     }
-
-    private void ClearAllSelectionVisual()
+    
+    private void ShowUnit(Unit u)
     {
-        if (curUnit != null)
-            curUnit.ToggleSelectionVisual(false);
+        InfoManager.instance.ShowAllInfo(u);
     }
 
     private void ClearEverything()
     {
         ClearAllSelectionVisual();
         curUnit = null;
+        
+        InfoManager.instance.ClearAllInfo();
     }
+
+    private void ClearAllSelectionVisual()
+    {
+        if (curUnit != null)
+            curUnit.ToggleSelectionVisual(false);
+    }
+    
     
 
 
