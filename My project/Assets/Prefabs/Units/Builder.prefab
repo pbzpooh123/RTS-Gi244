@@ -5142,8 +5142,9 @@ GameObject:
   - component: {fileID: 1360722573282164900}
   - component: {fileID: 75882736022175194}
   - component: {fileID: 2502282829804736280}
+  - component: {fileID: -7810833757641545520}
   m_Layer: 6
-  m_Name: English_Soilder 2
+  m_Name: Builder
   m_TagString: Unit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5262,14 +5263,14 @@ MonoBehaviour:
   id: 2
   unitName: 
   unitPic: {fileID: 0}
-  curHP: 0
+  curHP: 100
   maxHP: 100
   moveSpeed: 5
-  minWpnDamage: 0
-  maxWpnDamage: 0
-  armour: 0
-  visualRange: 0
-  weaponRange: 0
+  minWpnDamage: 10
+  maxWpnDamage: 10
+  armour: 10
+  visualRange: 10
+  weaponRange: 10
   state: 0
   faction: {fileID: 0}
   selectionVisual: {fileID: 4447196684278498420}
@@ -5279,6 +5280,8 @@ MonoBehaviour:
     gold: 100
     stone: 30
   unitWaitTime: 0.1
+  isBuilder: 1
+  builder: {fileID: 0}
 --- !u!114 &2502282829804736280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5291,6 +5294,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80dd27c900db6df4884c58b2a1b198b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-7810833757641545520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53785bfb8022def4699468e87265635d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toBuild: 0
+  showGhost: 0
+  buildingList:
+  - {fileID: 390753727783835037, guid: a64d4cacc7875f647a9ef6fa3e431621, type: 3}
+  - {fileID: 5688536773701175055, guid: 99874be787d143b43a7f5bf91e1cfa89, type: 3}
+  ghostBuildingList:
+  - {fileID: 390753727783835037, guid: 7d7bd634f871f964b9f066ddf8ed4253, type: 3}
+  - {fileID: 5688536773701175055, guid: 57fe5d209b77e2545932b18bd23c3037, type: 3}
+  newBuilding: {fileID: 0}
+  ghostBuilding: {fileID: 0}
+  inProgressBuilding: {fileID: 0}
 --- !u!1 &186630
 GameObject:
   m_ObjectHideFlags: 0

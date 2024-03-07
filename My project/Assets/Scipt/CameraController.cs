@@ -5,6 +5,10 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     [SerializeField] private Camera cam;
+    public Camera Cam
+    {
+        get { return cam; }
+    }
     [Header("Move")] [SerializeField] private float moveSpeed;
     [SerializeField] private Transform coner1;
     [SerializeField] private Transform coner2;
