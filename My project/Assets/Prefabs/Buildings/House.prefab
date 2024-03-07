@@ -88,6 +88,11 @@ MonoBehaviour:
   maxHP: 50
   faction: {fileID: 0}
   selectionVisual: {fileID: 5263904257326860712}
+  structureCost:
+    food: 0
+    wood: 0
+    gold: 0
+    stone: 0
   spawnPoint: {fileID: 0}
   rallyPoint: {fileID: 0}
   unitPrefabs: []
@@ -172,7 +177,7 @@ GameObject:
   m_Component:
   - component: {fileID: 262521470567067214}
   m_Layer: 0
-  m_Name: Spawnpoint
+  m_Name: SpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
