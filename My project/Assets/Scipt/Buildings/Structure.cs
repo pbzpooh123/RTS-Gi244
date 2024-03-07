@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public struct StructureCost
 {
     public int food;
@@ -39,7 +40,8 @@ public abstract class Structure : MonoBehaviour
     protected GameObject selectionVisual;
     public GameObject SelectionVisual { get { return selectionVisual; } }
 
-    [SerializeField] private StructureCost structureCost;
+    [SerializeField]
+    private StructureCost structureCost;
     public StructureCost StructureCost
     {
         get { return structureCost; }
