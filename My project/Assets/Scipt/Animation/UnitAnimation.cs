@@ -33,7 +33,10 @@ public class UnitAnimation : MonoBehaviour
             case UnitState.Move:
                 anim.SetBool("IsMove", true);
                 break;
-            case UnitState.Attack:
+            case UnitState.MoveToEnemy:
+                anim.SetBool("IsMove", true);
+                break;
+            case UnitState.AttackUnit:
                 anim.SetBool("IsAttack", true);
                 break;
             case UnitState.MoveToBuild:
@@ -53,6 +56,9 @@ public class UnitAnimation : MonoBehaviour
                 break;
             case UnitState.StoreAtHQ:
                 anim.SetBool("IsStoreAtHQ", true);
+                break;
+            case UnitState.Die:
+                anim.SetBool("IsDeath", true);
                 break;
         }
 

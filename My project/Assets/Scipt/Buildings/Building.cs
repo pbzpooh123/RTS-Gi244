@@ -82,7 +82,7 @@ public class Building : Structure
         if (unitPrefabs[id] == null)
             return;
 
-        GameObject unitObj = Instantiate(unitPrefabs[id], spawnPoint.position, Quaternion.Euler(0f, 180f, 0f));
+        GameObject unitObj = Instantiate(unitPrefabs[id], spawnPoint.position, Quaternion.Euler(0f, 180f, 0f),faction.UnitsParent);
 
         recruitList.RemoveAt(0);
 
@@ -125,7 +125,7 @@ public class Building : Structure
                 curUnitProgress++;
                 unitTimer = 0f;
 
-                if (curUnitProgress >= 50)
+                if (curUnitProgress >= 30)
                 {
                     curUnitProgress = 0;
                     curUnitWaitTime = 0f;

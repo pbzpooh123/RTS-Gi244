@@ -13,6 +13,8 @@ public class ResourceManager : MonoBehaviour
     [SerializeField]
     private ResourceSource[] resources;
 
+    public ResourceSource[] Resource;
+
     public static ResourceManager instance;
     
     private void FindAllResource()

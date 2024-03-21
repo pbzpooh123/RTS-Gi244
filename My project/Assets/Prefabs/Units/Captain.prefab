@@ -582,6 +582,7 @@ GameObject:
   - component: {fileID: 2111388460642179446}
   - component: {fileID: 2284982531324203333}
   - component: {fileID: 2393255452061966374}
+  - component: {fileID: 7708502503118186186}
   m_Layer: 6
   m_Name: Captain
   m_TagString: Unit
@@ -719,6 +720,16 @@ MonoBehaviour:
     gold: 20
     stone: 20
   unitWaitTime: 0.1
+  isBuilder: 0
+  builder: {fileID: 0}
+  isWorker: 0
+  worker: {fileID: 0}
+  pathUpdateRate: 1
+  lastPathUpdateTime: 0
+  curEnemyUnitTarget: {fileID: 0}
+  attackRate: 1
+  lastAttackTime: 0
+  defendRange: 30
 --- !u!114 &2393255452061966374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -729,6 +740,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 80dd27c900db6df4884c58b2a1b198b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7708502503118186186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 596227410670953947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9121c7b1bbd90764faebab72de777b59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &604025491543486848
