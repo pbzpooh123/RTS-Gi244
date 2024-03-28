@@ -96,6 +96,12 @@ public class UnitSelect : MonoBehaviour
         InfoManager.instance.ShowAllInfo(b);
         ActionManager.instance.ShowCreateUnitMode(b);
     }
+    
+    private void ShowEnemyBuilding(Building b)
+    {
+        InfoManager.instance.ShowEnemyAllInfo(b);
+    }
+
 
     
     private void ShowUnit(Unit u)
@@ -117,6 +123,10 @@ public class UnitSelect : MonoBehaviour
         {
             //Debug.Log("my building");
             ShowBuilding(curBuilding);//Show building info
+        }
+        else
+        {
+            ShowEnemyBuilding(curBuilding);
         }
     }
 

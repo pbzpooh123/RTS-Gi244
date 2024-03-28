@@ -66,8 +66,6 @@ MonoBehaviour:
   spawnPoint: {fileID: 6236254868787497002}
   rallyPoint: {fileID: 6558822812086864440}
   unitPrefabs:
-  - {fileID: 186328, guid: 3bf83df36ae965140a306f9c4ee49709, type: 3}
-  - {fileID: 596227410670953947, guid: 6238604534045b04db0a85badabafc2c, type: 3}
   - {fileID: 186328, guid: cf3d42878d0ed594e8509d720f5d3ad4, type: 3}
   - {fileID: 105566, guid: becb0f5c5d9bd214dab9cd0db45d0ac7, type: 3}
   recruitList: []
@@ -77,6 +75,8 @@ MonoBehaviour:
   isFunctional: 1
   isHQ: 1
   intoTheGround: 5
+  isHousing: 0
+  isBarrack: 0
 --- !u!208 &5751016840141989275
 NavMeshObstacle:
   m_ObjectHideFlags: 0

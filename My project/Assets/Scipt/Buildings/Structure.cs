@@ -47,6 +47,20 @@ public abstract class Structure : MonoBehaviour
         get { return structureCost; }
         set { structureCost = value; }
     }
+    
+    protected void Die()
+    {
+        InfoManager.instance.ClearAllInfo();
+        Destroy(gameObject);
+    }
+
+    public void TakeDamage(int damage)
+    {
+        curHP -= damage;
+        if (curHP <= 0)
+            Die();
+    }
+
 
 
     // Start is called before the first frame update

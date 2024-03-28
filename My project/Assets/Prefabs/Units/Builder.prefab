@@ -5260,7 +5260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f99bc41502c8154c8f9a75c4753ed79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 2
+  id: 0
   unitName: Builder
   unitPic: {fileID: 1826374060, guid: 6efa3428a29cb9e4bb41fc9d6827074f, type: 3}
   curHP: 100
@@ -5287,6 +5287,7 @@ MonoBehaviour:
   pathUpdateRate: 1
   lastPathUpdateTime: 0
   curEnemyUnitTarget: {fileID: 0}
+  curEnemyBuildingTarget: {fileID: 0}
   attackRate: 1
   lastAttackTime: 0
   defendRange: 30
@@ -5319,9 +5320,13 @@ MonoBehaviour:
   buildingList:
   - {fileID: 390753727783835037, guid: a64d4cacc7875f647a9ef6fa3e431621, type: 3}
   - {fileID: 5688536773701175055, guid: 99874be787d143b43a7f5bf91e1cfa89, type: 3}
+  - {fileID: 1132469736287572894, guid: fa8ddccd593c2c44b92b45a7dc9480da, type: 3}
+  - {fileID: 6029444945256431395, guid: c64c034132941d54fa15c665e024f9da, type: 3}
   ghostBuildingList:
   - {fileID: 390753727783835037, guid: 7d7bd634f871f964b9f066ddf8ed4253, type: 3}
   - {fileID: 5688536773701175055, guid: 57fe5d209b77e2545932b18bd23c3037, type: 3}
+  - {fileID: 1132469736287572894, guid: cef7b75bdb77a9e4ebb4f589d4e3d6d9, type: 3}
+  - {fileID: 6029444945256431395, guid: 73db312b0a6bed94cb85248d4d3f2b05, type: 3}
   newBuilding: {fileID: 0}
   ghostBuilding: {fileID: 0}
   inProgressBuilding: {fileID: 0}
