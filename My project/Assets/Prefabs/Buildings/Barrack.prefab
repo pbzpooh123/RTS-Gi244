@@ -215,7 +215,7 @@ MonoBehaviour:
   curHP: 100
   maxHP: 100
   faction: {fileID: 0}
-  selectionVisual: {fileID: 0}
+  selectionVisual: {fileID: 3931358787808087268}
   structureCost:
     food: 150
     wood: 150
@@ -439,5 +439,10 @@ PrefabInstance:
 --- !u!4 &836478372299576285 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7722698192814857106, guid: a59e14bcb8b1f8049ad36cf55ec91ffa, type: 3}
+  m_PrefabInstance: {fileID: 6969124380268906575}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3931358787808087268 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6213191017883501739, guid: a59e14bcb8b1f8049ad36cf55ec91ffa, type: 3}
   m_PrefabInstance: {fileID: 6969124380268906575}
   m_PrefabAsset: {fileID: 0}

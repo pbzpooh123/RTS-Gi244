@@ -4079,12 +4079,12 @@ PrefabInstance:
       objectReference: {fileID: 1638600976}
     - target: {fileID: 8595636100921688127, guid: 6c39212ac52b5bf40a3212b9a61c6b15, type: 3}
       propertyPath: aliveBuildings.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8595636100921688127, guid: 6c39212ac52b5bf40a3212b9a61c6b15, type: 3}
       propertyPath: aliveBuildings.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1269971495}
     - target: {fileID: 8595636100921688127, guid: 6c39212ac52b5bf40a3212b9a61c6b15, type: 3}
       propertyPath: aliveBuildings.Array.data[1]
       value: 
@@ -7373,6 +7373,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1251346381}
   m_CullTransparentMesh: 1
+--- !u!114 &1269971495 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3054578088292344289, guid: 99874be787d143b43a7f5bf91e1cfa89, type: 3}
+  m_PrefabInstance: {fileID: 1156782989}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d09755d4e64346243b261e17bcf569fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1269971496 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4401412817715290603, guid: 99874be787d143b43a7f5bf91e1cfa89, type: 3}
