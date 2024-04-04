@@ -76,6 +76,9 @@ public class Faction : MonoBehaviour
     [SerializeField] private Transform ghostBuildingParent;
     public Transform GhostBuildingParent { get { return ghostBuildingParent; } }
     
+    
+
+    
     public bool CheckBuildingCost(Building building)
     {
         if (food < building.StructureCost.food)
@@ -109,6 +112,10 @@ public class Faction : MonoBehaviour
     {
         foreach (Building b in aliveBuildings)
         {
+            if (b == null)
+            {
+                continue;
+            }
             if (b.IsHQ)
                 return b.SpawnPoint.position;
         }
@@ -146,7 +153,7 @@ public class Faction : MonoBehaviour
         ResourceSource[] closest = new ResourceSource[2];
         float[] closestDist = new float[2];
 
-        foreach (ResourceSource resource in ResourceManager.instance.Resource)
+        foreach (ResourceSource resource in ResourceManager.instance.Resources)
         {
             if (resource == null)
                 continue;
@@ -181,6 +188,9 @@ public class Faction : MonoBehaviour
 
     [SerializeField] private GameObject[] buildingPrefabs;
     public GameObject[] BuildingPrefabs { get { return buildingPrefabs; } }
+    
+    [SerializeField] private GameObject[] ghostBuildingPrefabs;
+    public GameObject[] GhostBuildingPrefabs { get { return ghostBuildingPrefabs; } }
 
     [SerializeField] private GameObject[] unitPrefabs;
     public GameObject[] UnitPrefabs { get { return unitPrefabs; } }
@@ -206,7 +216,8 @@ public class Faction : MonoBehaviour
         else if (unitLimit < 0)
             unitLimit = 0;
 
-        MainUI.instance.UpdateAllResource(this);
+        if (this == GameManager.instance.MyFaction) 
+            MainUI.instance.UpdateAllResource(this);
     }
 
     public bool CheckUnitCost(int i)
@@ -239,7 +250,7 @@ public class Faction : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        UpdateHousingLimit();
     }
 
     // Update is called once per frame

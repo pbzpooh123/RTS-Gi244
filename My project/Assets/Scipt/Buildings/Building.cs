@@ -114,6 +114,32 @@ public class Building : Structure
         if (SelectionVisual != null)
             SelectionVisual.SetActive(flag);
     }
+    
+    public int CheckNumInRecruitList(int id)
+    {
+        int num = 0;
+
+        foreach (Unit u in recruitList)
+        {
+            if (id == u.ID)
+                num++;
+        }
+        return num;
+    }
+    
+    protected override void Die()
+    {
+        if (faction != null)
+            faction.AliveBuildings.Remove(this);
+
+        if (IsHousing)
+            faction.UpdateHousingLimit();
+
+        base.Die();
+
+        //Check Victory Condition
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -135,7 +161,7 @@ public class Building : Structure
                 curUnitProgress++;
                 unitTimer = 0f;
 
-                if (curUnitProgress >= 30)
+                if (curUnitProgress >= 30 && (faction.AliveUnits.Count < faction.UnitLimit))
                 {
                     curUnitProgress = 0;
                     curUnitWaitTime = 0f;

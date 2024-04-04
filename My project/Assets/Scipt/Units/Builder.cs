@@ -1,4 +1,4 @@
-using System.Collections;
+    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -188,6 +188,7 @@ public class Builder : MonoBehaviour
 
                 inProgressBuilding = null; //Clear this job off his mind
                 unit.SetState(UnitState.Idle);
+                unit.Faction.UpdateHousingLimit();
             }
         }
     }

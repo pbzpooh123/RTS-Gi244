@@ -10,8 +10,16 @@ public class CameraController : MonoBehaviour
         get { return cam; }
     }
     [Header("Move")] [SerializeField] private float moveSpeed;
-    [SerializeField] private Transform coner1;
-    [SerializeField] private Transform coner2;
+    [SerializeField] private Transform corner1;
+    public Transform Corner1
+    {
+        get { return corner1; }
+    }
+    [SerializeField] private Transform corner2;
+    public Transform Corner2
+    {
+        get { return corner2; }
+    }
     [SerializeField] private float xInput;
     [SerializeField] private float zInput;
     [Header("Zoom")] [SerializeField] private float zoomSpeed;
@@ -51,7 +59,7 @@ public class CameraController : MonoBehaviour
         Vector3 dir = (transform.forward * zInput) + (transform.right * xInput);
 
         transform.position += dir * moveSpeed * Time.deltaTime;
-        transform.position = Clamp(coner1.position, coner2.position);
+        transform.position = Clamp(corner1.position, corner2.position);
     }
 
     private Vector3 Clamp(Vector3 lowerLeft, Vector3 topRight)
