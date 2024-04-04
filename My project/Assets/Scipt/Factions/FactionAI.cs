@@ -25,7 +25,7 @@ public class FactionAI : MonoBehaviour
         //Create Workers
         if (curHQ != null)
         {
-            if (support.Workers.Count + curHQ.CheckNumInRecruitList((1))< 5) // if there are less than 5 units, keep recruiting Workers
+            if (support.Workers.Count + curHQ.CheckNumInRecruitList((1))< 10) // if there are less than 5 units, keep recruiting Workers
             {
                 // if we can recruit a new worker/builder, do so
                 if (faction.CheckUnitCost(1))
@@ -52,6 +52,8 @@ public class FactionAI : MonoBehaviour
         UpdateImportantBuilding();
         WorkerFindResource(ResourceType.Wood,3);
         WorkerFindResource(ResourceType.Food,2);
+        WorkerFindResource(ResourceType.Stone,3);
+        WorkerFindResource(ResourceType.Gold,2);
     }
     
     private void UpdateImportantBuilding()
