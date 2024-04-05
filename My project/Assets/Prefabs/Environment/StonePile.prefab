@@ -168,7 +168,19 @@ MonoBehaviour:
   selectionVisual: {fileID: 0}
   onRsrcQuantityChange:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5212607888507462544}
+        m_TargetAssemblyTypeName: ResourceUI, Assembly-CSharp
+        m_MethodName: OnQuantityChange
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onInfoQuantityChange:
     m_PersistentCalls:
       m_Calls: []
@@ -262,6 +274,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4583861406084338}
     m_Modifications:
+    - target: {fileID: 3531516591859561622, guid: bdb61c6e86143de4fb71d401b57bf16d, type: 3}
+      propertyPath: resource
+      value: 
+      objectReference: {fileID: 1314000504262132874}
     - target: {fileID: 3829996129818156749, guid: bdb61c6e86143de4fb71d401b57bf16d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -295,6 +311,18 @@ PrefabInstance:
       value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 3829996129818156749, guid: bdb61c6e86143de4fb71d401b57bf16d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.011769382
+      objectReference: {fileID: 0}
+    - target: {fileID: 3829996129818156749, guid: bdb61c6e86143de4fb71d401b57bf16d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.0063288677
+      objectReference: {fileID: 0}
+    - target: {fileID: 3829996129818156749, guid: bdb61c6e86143de4fb71d401b57bf16d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.011769382
+      objectReference: {fileID: 0}
+    - target: {fileID: 3829996129818156749, guid: bdb61c6e86143de4fb71d401b57bf16d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -308,11 +336,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3829996129818156749, guid: bdb61c6e86143de4fb71d401b57bf16d, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.9238795
       objectReference: {fileID: 0}
     - target: {fileID: 3829996129818156749, guid: bdb61c6e86143de4fb71d401b57bf16d, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0.38268346
       objectReference: {fileID: 0}
     - target: {fileID: 3829996129818156749, guid: bdb61c6e86143de4fb71d401b57bf16d, type: 3}
       propertyPath: m_LocalRotation.y
@@ -328,7 +356,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3829996129818156749, guid: bdb61c6e86143de4fb71d401b57bf16d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 6
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 3829996129818156749, guid: bdb61c6e86143de4fb71d401b57bf16d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -342,6 +370,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5676505583505806383, guid: bdb61c6e86143de4fb71d401b57bf16d, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7725180642486033811, guid: bdb61c6e86143de4fb71d401b57bf16d, type: 3}
       propertyPath: m_Name
       value: ResourceUI
@@ -351,6 +383,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bdb61c6e86143de4fb71d401b57bf16d, type: 3}
+--- !u!114 &5212607888507462544 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3531516591859561622, guid: bdb61c6e86143de4fb71d401b57bf16d, type: 3}
+  m_PrefabInstance: {fileID: 8742772072201918214}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fc3a2bb48e2bff45a61dade8aa9d7f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &5508590436608084427 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3829996129818156749, guid: bdb61c6e86143de4fb71d401b57bf16d, type: 3}

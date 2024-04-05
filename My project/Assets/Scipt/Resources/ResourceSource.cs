@@ -49,6 +49,7 @@ public class ResourceSource : MonoBehaviour
             amountToGive = amountRequest;
 
         quantity -= amountToGive;
+        onRsrcQuantityChange.Invoke();
 
         // if we're depleted, delete the resource
         if (quantity <= 0)
@@ -71,7 +72,7 @@ public class ResourceSource : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        onRsrcQuantityChange.Invoke();
 
     }
 
