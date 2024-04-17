@@ -143,6 +143,7 @@ public class UnitSelect : MonoBehaviour
         curEnemy = null;
         
         InfoManager.instance.ClearAllInfo();
+        ActionManager.instance.ClearAllInfo();
     }
 
     private void ClearAllSelectionVisual()
@@ -222,22 +223,22 @@ public class UnitSelect : MonoBehaviour
         InfoManager.instance.ShowEnemyAllInfo(u);
     }
 
-private void UpdateUI()
-{
-    if (curUnits.Count == 1)
-        ShowUnit(curUnits[0]);
-    else if (curEnemy != null)
-        ShowEnemyUnit(curEnemy);
-    else if (curResource != null)
-        ShowResource();
-    else if (curBuilding != null)
+    private void UpdateUI()
+    {
+        if (curUnits.Count == 1)
+            ShowUnit(curUnits[0]);
+        else if (curEnemy != null)
+            ShowEnemyUnit(curEnemy);
+        else if (curResource != null)
+            ShowResource();
+        else if (curBuilding != null)
         {
             if (GameManager.instance.MyFaction.IsMyBuilding(curBuilding))
                 ShowBuilding(curBuilding);//Show building info
             else
                 ShowEnemyBuilding(curBuilding);
         }
-}
+    }
 
 //When Touching UI
 private bool IsPointerOverUIObject()
@@ -279,9 +280,8 @@ private bool IsPointerOverUIObject()
         {
             ReleaseSelectionBox(Input.mousePosition);
             if (IsPointerOverUIObject())
-            {
                 return;
-            }
+            
             TrySelect(Input.mousePosition);
         }
 

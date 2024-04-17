@@ -97,6 +97,11 @@ public class CameraController : MonoBehaviour
         }
     }
 
+	public void FocusOnPosition(Vector3 pos)
+    {
+        transform.position = pos;
+    }
+
     void Rotate()
     {
         if (Input.GetKey(KeyCode.Q))
