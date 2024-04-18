@@ -50,6 +50,11 @@ public class CameraController : MonoBehaviour
         
         
     }
+    
+    public void FocusOnPosition(Vector3 pos)
+    {
+        transform.position = pos;
+    }
 
     private void MoveByKB()
     {
