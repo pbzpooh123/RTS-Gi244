@@ -522,7 +522,7 @@ GameObject:
   - component: {fileID: 1074396140}
   - component: {fileID: 1074396139}
   m_Layer: 5
-  m_Name: Button
+  m_Name: France
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -791,7 +791,7 @@ GameObject:
   - component: {fileID: 1154889548}
   - component: {fileID: 1154889547}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Britian
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

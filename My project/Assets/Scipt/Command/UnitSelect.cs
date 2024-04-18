@@ -224,6 +224,7 @@ public class UnitSelect : MonoBehaviour
 
 private void UpdateUI()
 {
+    Debug.Log("Update UI curUnits.Counts" + curUnits.Count);
     if (curUnits.Count == 1)
         ShowUnit(curUnits[0]);
     else if (curEnemy != null)

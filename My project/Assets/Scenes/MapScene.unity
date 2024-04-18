@@ -5300,6 +5300,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8556160549731206637, guid: 9dca1924765e3fe458ec2dea08309014, type: 3}
+      propertyPath: curHP
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8556160549731206637, guid: 9dca1924765e3fe458ec2dea08309014, type: 3}
+      propertyPath: maxHP
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8556160549731206637, guid: 9dca1924765e3fe458ec2dea08309014, type: 3}
       propertyPath: faction
       value: 
       objectReference: {fileID: 8595636100269908274}
@@ -6487,6 +6495,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8556160549731206637, guid: a64d4cacc7875f647a9ef6fa3e431621, type: 3}
+      propertyPath: curHP
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8556160549731206637, guid: a64d4cacc7875f647a9ef6fa3e431621, type: 3}
+      propertyPath: maxHP
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8556160549731206637, guid: a64d4cacc7875f647a9ef6fa3e431621, type: 3}
       propertyPath: faction
       value: 
       objectReference: {fileID: 2039264665}
@@ -7292,6 +7308,10 @@ PrefabInstance:
     - target: {fileID: 8595636100921688127, guid: 6c39212ac52b5bf40a3212b9a61c6b15, type: 3}
       propertyPath: stone
       value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8595636100921688127, guid: 6c39212ac52b5bf40a3212b9a61c6b15, type: 3}
+      propertyPath: nation
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8595636100921688127, guid: 6c39212ac52b5bf40a3212b9a61c6b15, type: 3}
       propertyPath: unitsParent

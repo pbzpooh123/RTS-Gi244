@@ -315,7 +315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dd44a92c085ae34abcbff5913cae6e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newScene: 
+  newScene: ChooseSide
 --- !u!114 &582341625
 MonoBehaviour:
   m_ObjectHideFlags: 0
