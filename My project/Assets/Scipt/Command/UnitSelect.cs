@@ -13,7 +13,7 @@ public class UnitSelect : MonoBehaviour
     private LayerMask layerMask;
 
     [SerializeField]
-    private List<Unit> curUnits; //current selected single unit
+    private List<Unit> curUnits = new List<Unit>(); //current selected single unit
     public List<Unit> CurUnits { get { return curUnits; } }
 
     private Camera cam;
@@ -222,23 +222,22 @@ public class UnitSelect : MonoBehaviour
         InfoManager.instance.ShowEnemyAllInfo(u);
     }
 
-private void UpdateUI()
-{
-    Debug.Log("Update UI curUnits.Counts" + curUnits.Count);
-    if (curUnits.Count == 1)
-        ShowUnit(curUnits[0]);
-    else if (curEnemy != null)
-        ShowEnemyUnit(curEnemy);
-    else if (curResource != null)
-        ShowResource();
-    else if (curBuilding != null)
+    private void UpdateUI()
+    {
+        if (curUnits.Count == 1)
+            ShowUnit(curUnits[0]);
+        else if (curEnemy != null)
+            ShowEnemyUnit(curEnemy);
+        else if (curResource != null)
+            ShowResource();
+        else if (curBuilding != null)
         {
             if (GameManager.instance.MyFaction.IsMyBuilding(curBuilding))
                 ShowBuilding(curBuilding);//Show building info
             else
                 ShowEnemyBuilding(curBuilding);
         }
-}
+    }
 
 //When Touching UI
 private bool IsPointerOverUIObject()
