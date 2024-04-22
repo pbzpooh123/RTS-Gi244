@@ -12,8 +12,7 @@ public class UnitSelect : MonoBehaviour
     [SerializeField]
     private LayerMask layerMask;
 
-    [SerializeField]
-    private List<Unit> curUnits; //current selected single unit
+    [SerializeField] private List<Unit> curUnits = new List<Unit>(); //current selected single unit
     public List<Unit> CurUnits { get { return curUnits; } }
 
     private Camera cam;
