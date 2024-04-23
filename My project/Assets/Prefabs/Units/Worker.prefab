@@ -278,6 +278,7 @@ GameObject:
   - component: {fileID: 3704093105469259289}
   - component: {fileID: 995036868112818409}
   - component: {fileID: 2600771960316687453}
+  - component: {fileID: 4418184665517714803}
   m_Layer: 6
   m_Name: Worker
   m_TagString: Unit
@@ -422,7 +423,7 @@ MonoBehaviour:
   minWpnDamage: 0
   maxWpnDamage: 0
   armour: 0
-  visualRange: 0
+  visualRange: 60
   weaponRange: 0
   state: 0
   faction: {fileID: 0}
@@ -454,6 +455,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 80dd27c900db6df4884c58b2a1b198b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4418184665517714803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae5d85e865caf2e4b8457c1e5c243c91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &106418

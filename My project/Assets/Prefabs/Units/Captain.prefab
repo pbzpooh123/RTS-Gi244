@@ -583,6 +583,7 @@ GameObject:
   - component: {fileID: 2284982531324203333}
   - component: {fileID: 2393255452061966374}
   - component: {fileID: 7708502503118186186}
+  - component: {fileID: -4597279069553875127}
   m_Layer: 6
   m_Name: Captain
   m_TagString: Unit
@@ -709,7 +710,7 @@ MonoBehaviour:
   minWpnDamage: 0
   maxWpnDamage: 30
   armour: 10
-  visualRange: 30
+  visualRange: 60
   weaponRange: 25
   state: 0
   faction: {fileID: 0}
@@ -753,6 +754,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9121c7b1bbd90764faebab72de777b59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-4597279069553875127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 596227410670953947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae5d85e865caf2e4b8457c1e5c243c91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &604025491543486848

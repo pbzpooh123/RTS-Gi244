@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5541980598010603260}
   - component: {fileID: 1918311081635797035}
   - component: {fileID: 6627514442510671354}
+  - component: {fileID: 4838020943419966031}
   m_Layer: 7
   m_Name: Fort
   m_TagString: Building
@@ -144,6 +145,18 @@ MonoBehaviour:
   shootRange: 50
   shootDamage: 10
   state: 0
+--- !u!114 &4838020943419966031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132469736287572894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae5d85e865caf2e4b8457c1e5c243c91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2125981573299214990
 GameObject:
   m_ObjectHideFlags: 0

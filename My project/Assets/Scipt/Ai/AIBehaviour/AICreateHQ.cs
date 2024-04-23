@@ -7,7 +7,7 @@ public class AICreateHQ : AIBehaviour
 {
     protected AISupport support;
 
-    public float rangeFromStartPos = 30f;
+    public float rangeFromStartPos = 3f;
 
     protected GameObject buildingPrefab; //HQ's Prefab
     protected GameObject buildingGhostPrefab;

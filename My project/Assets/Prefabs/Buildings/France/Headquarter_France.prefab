@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 898964278841168637}
   - component: {fileID: 2980944511903865333}
   - component: {fileID: 2104332949590561945}
+  - component: {fileID: 9142160104897852466}
   m_Layer: 7
   m_Name: Headquarter_France
   m_TagString: Building
@@ -54,8 +55,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   structureName: HeadQuarter
   structurePic: {fileID: 21300000, guid: 02e2e0d287b58ac4a93dd31d284ad9ef, type: 3}
-  curHP: 100
-  maxHP: 100
+  curHP: 1000
+  maxHP: 1000
   faction: {fileID: 0}
   selectionVisual: {fileID: 7197007132749149991}
   structureCost:
@@ -162,6 +163,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 20, y: 20, z: 20}
   m_Center: {x: 0, y: 10, z: 8}
+--- !u!114 &9142160104897852466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 390753727783835037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae5d85e865caf2e4b8457c1e5c243c91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2465657994905884328
 GameObject:
   m_ObjectHideFlags: 0
