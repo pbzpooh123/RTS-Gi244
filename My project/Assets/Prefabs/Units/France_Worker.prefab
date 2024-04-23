@@ -415,7 +415,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 1
-  unitName: Worker
+  unitName: Fr.Worker
   unitPic: {fileID: -1369196460, guid: 6efa3428a29cb9e4bb41fc9d6827074f, type: 3}
   curHP: 100
   maxHP: 100

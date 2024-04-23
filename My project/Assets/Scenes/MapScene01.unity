@@ -3546,11 +3546,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1411758826552705167, guid: ad917a67882d17748925a4b51793bb7e, type: 3}
       propertyPath: gold
-      value: 600
+      value: 6000
       objectReference: {fileID: 0}
     - target: {fileID: 1411758826552705167, guid: ad917a67882d17748925a4b51793bb7e, type: 3}
       propertyPath: wood
-      value: 500
+      value: 5000
       objectReference: {fileID: 0}
     - target: {fileID: 1411758826552705167, guid: ad917a67882d17748925a4b51793bb7e, type: 3}
       propertyPath: stone
@@ -3631,15 +3631,15 @@ PrefabInstance:
     - target: {fileID: 1411758826552705167, guid: ad917a67882d17748925a4b51793bb7e, type: 3}
       propertyPath: unitPrefabs.Array.data[0]
       value: 
-      objectReference: {fileID: 105566, guid: 63d4964d436c0d340a73ea49b0a4b38f, type: 3}
+      objectReference: {fileID: 186328, guid: dc4207a4c6a41d74e851ed71b521ce28, type: 3}
     - target: {fileID: 1411758826552705167, guid: ad917a67882d17748925a4b51793bb7e, type: 3}
       propertyPath: unitPrefabs.Array.data[1]
       value: 
-      objectReference: {fileID: 5521081155845639521, guid: d4d5eec63b5ce23419448e471c320517, type: 3}
+      objectReference: {fileID: 105566, guid: 63d4964d436c0d340a73ea49b0a4b38f, type: 3}
     - target: {fileID: 1411758826552705167, guid: ad917a67882d17748925a4b51793bb7e, type: 3}
       propertyPath: unitPrefabs.Array.data[2]
       value: 
-      objectReference: {fileID: 186328, guid: dc4207a4c6a41d74e851ed71b521ce28, type: 3}
+      objectReference: {fileID: 5521081155845639521, guid: d4d5eec63b5ce23419448e471c320517, type: 3}
     - target: {fileID: 1411758826552705167, guid: ad917a67882d17748925a4b51793bb7e, type: 3}
       propertyPath: buildingPrefabs.Array.size
       value: 3
@@ -7439,15 +7439,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8595636100921688127, guid: 6c39212ac52b5bf40a3212b9a61c6b15, type: 3}
       propertyPath: gold
-      value: 500
+      value: 5000
       objectReference: {fileID: 0}
     - target: {fileID: 8595636100921688127, guid: 6c39212ac52b5bf40a3212b9a61c6b15, type: 3}
       propertyPath: wood
-      value: 600
+      value: 6000
       objectReference: {fileID: 0}
     - target: {fileID: 8595636100921688127, guid: 6c39212ac52b5bf40a3212b9a61c6b15, type: 3}
       propertyPath: stone
-      value: 200
+      value: 2000
       objectReference: {fileID: 0}
     - target: {fileID: 8595636100921688127, guid: 6c39212ac52b5bf40a3212b9a61c6b15, type: 3}
       propertyPath: nation
